@@ -17,3 +17,11 @@ function setNight() {
     $(document.body).removeClass('day');
     $(document.body).addClass('night');
 }
+
+function toggleMode() {
+  if ($(document.body).hasClass('day')) {
+    setNight();
+  } else {
+    setDay();
+  }
+}

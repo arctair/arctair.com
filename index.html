@@ -6,76 +6,133 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src='js/bg.js'></script>
-    <script src='js/panelLink.js'></script>
     <style>
-        html {
-            height: 100%;
-        }
-        body {
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-        }
-        div.main {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            
-            width: 35vw;
-            left: 0; right: 0;
-            margin: auto;
-            
-            background-color: rgba(200, 200, 200, 0.75);
-            border-radius: 8px;
-        }
-        
-        @media screen and (max-device-width: 960px) {
-            div.main  {
-                width: 80vw;
-            }
-        }
-        
-        div.main h1 {
-            border-bottom: 4px solid #FFF;
-        }
-        
-        div.panel-body div {
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-        div.panel-body div.panel-item:hover {
-            cursor: pointer;
-        }
-        body.day div.panel-body div.panel-item:hover {
-            background-color: rgba(0, 0, 255, 0.1);
-        }
-        body.night div.panel-body div.panel-item:hover {
-            background-color: rgba(255, 0, 0, 0.1);
-        }
-    </style>
+/* background configuration */
+html {
+  height: 100%;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* main window positioning and style*/
+div.main {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 35vw;
+  left: 0; right: 0;
+  margin: auto;
+  
+  border-radius: 8px;
+}
+
+@media screen and (max-device-width: 960px) {
+  div.main  {
+    width: 80vw;
+  }
+}
+
+/* window header */
+div.main h1 {
+  border-bottom: 4px solid #FFF;
+}
+
+/* window body */
+div.panel-body div {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* day/night styling */
+body.day div.panel-body div.panel-item:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+body.night div.panel-body div.panel-item:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+body.day div.main {
+  background-color: rgba(200, 200, 200, 0.75);
+}
+body.night div.main {
+  background-color: rgba(216, 200, 200, 0.75);
+}
+body.night div.main div.panel {
+  background-color: #644;
+  color: #CAA;
+}
+body.night div.main div.panel div.panel-heading {
+  background-image: linear-gradient(to bottom,#775555 0,#664444 100%);
+  color: #DBB;
+}
+
+/* allow panel-items to behave as anchors */
+div.panel-item {
+  position: relative;
+}
+div.panel-item a span {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+
+div.toggleMode {
+  position: absolute;
+  right: 0;
+  margin: 4px;
+}
+</style>
   </head>
   <body>
+    <div class="toggleMode pull-right">
+      <button class="btn" onclick="toggleMode()">
+        <span class="glyphicon glyphicon glyphicon-adjust"></span>
+      </button>
+    </div>
     <div class='main container-fluid'>
-      <h1>arctair <small>official</small></h1>
+      <h1>arctair <small>official projects and contact</small></h1>
       <div class="panel panel-default">
         <div class="panel-heading">Live projects</div>
         <div class="panel-body">
           <div class="panel-item">
-            <p>Storyteller<br><small>a web app for teams building user stories</small></p>
-            <a href="http://github.com/NDSU-CS445-MR/Storyteller"></a>
+            <p>
+              <b>Storyteller</b>
+              <br>
+              <small>a web app for teams building user stories</small>
+            </p>
+            <a href="http://github.com/NDSU-CS445-MR/Storyteller"><span></span></a>
           </div>
           <div class="panel-item">
-            <p>Hammocky<br><small>a mobile app for hammock adventurists</small></p>
-            <a href="http://github.com/arctair/hammocky"></a>
+            <p>
+              <b>Hammocky</b>
+              <br>
+              <small>a mobile app for hammock adventurists</small>
+            </p>
+            <a href="http://github.com/arctair/hammocky"><span></span></a>
           </div>
           <div class="panel-item">
-            <p>Geostructure VR<br><small>a virtual reality experience for geology students</small></p>
-            <a href="http://github.com/arctair/GeoStructure-VR"></a>
+            <p>
+              <b>Geostructure VR</b>
+              <br>
+              <small>a virtual reality experience for geology students</small>
+            </p>
+            <a href="http://github.com/arctair/GeoStructure-VR"><span></span></a>
           </div>
           <div class="panel-item">
-            <p>Geoduck<br><small>a discord bot for region-locking matchmaking channels</small></p>
-            <a href="http://github.com/arctair/geoduck"></a>
+            <p>
+              <b>Geoduck</b>
+              <br>
+              <small>a discord bot for region-locking matchmaking channels</small>
+            </p>
+            <a href="http://github.com/arctair/geoduck"><span></span></a>
           </div>
         </div>
       </div>
@@ -84,37 +141,39 @@
         <div class="panel-body">
           <div class="panel-item">
             <p>
-              email<br>
-              <small>tyler&#64;arctair.com</small><br>
+              <b>email</b>
+              <br>
+              <small>tyler&#64;arctair.com</small>
+              <br>
               <small>pgp encryption welcome</small>
             </p>
-            <a href="mailto:tyler@arctair.com"></a>
+            <a href="mailto:tyler@arctair.com"><span></span></a>
           </div>
           <div class="panel-item">
             <p>
-              steam<br>
+              <b>steam</b>
+              <br>
               <small>arctair</small>
             </p>
-            <a href="https://steamcommunity.com/id/arctair"></a>
+            <a href="https://steamcommunity.com/id/arctair"><span></span></a>
           </div>
           <div class="panel-item">
             <p>
-              reddit<br>
+              <b>reddit</b>
+              <br>
               <small>arctair</small>
             </p>
-            <a href="https://www.reddit.com/user/arctair"></a>
+            <a href="https://www.reddit.com/user/arctair"><span></span></a>
           </div>
           <div class="panel-item">
             <p>
-              stackexchange<br>
+              <b>stackexchange</b>
+              <br>
               <small>arctair</small>
             </p>
-            <a href="https://stackexchange.com/users/8089275/arctair"></a>
+            <a href="https://stackexchange.com/users/8089275/arctair"><span></span></a>
           </div>
         </div>
-      </div>
-      <div class="alert alert-warning">
-        <strong>Work in progress!</strong> Some links may lead to nowhere. Check back later or email me for more information.
       </div>
     </div>
   </body>
