@@ -4,92 +4,9 @@
     <script src='js/jquery-3.2.1.min.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src='js/bg.js'></script>
-    <style>
-/* background configuration */
-html {
-  height: 100%;
-}
-body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-/* main window positioning and style*/
-div.main {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  
-  width: 35vw;
-  left: 0; right: 0;
-  margin: auto;
-  
-  border-radius: 8px;
-}
-
-@media screen and (max-device-width: 960px) {
-  div.main  {
-    width: 80vw;
-  }
-}
-
-/* window header */
-div.main h1 {
-  border-bottom: 4px solid #FFF;
-}
-
-/* window body */
-div.panel-body div {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-/* day/night styling */
-body.day div.panel-body div.panel-item:hover {
-  background-color: rgba(0, 0, 255, 0.1);
-}
-body.night div.panel-body div.panel-item:hover {
-  background-color: rgba(255, 0, 0, 0.1);
-}
-body.day div.main {
-  background-color: rgba(200, 200, 200, 0.75);
-}
-body.night div.main {
-  background-color: rgba(216, 200, 200, 0.75);
-}
-body.night div.main div.panel {
-  background-color: #644;
-  color: #CAA;
-}
-body.night div.main div.panel div.panel-heading {
-  background-image: linear-gradient(to bottom,#775555 0,#664444 100%);
-  color: #DBB;
-}
-
-/* allow panel-items to behave as anchors */
-div.panel-item {
-  position: relative;
-}
-div.panel-item a span {
-  position: absolute; 
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-
-  z-index: 1;
-}
-
-div.toggleMode {
-  position: absolute;
-  right: 0;
-  margin: 4px;
-}
-</style>
   </head>
   <body>
     <div class="toggleMode pull-right">
