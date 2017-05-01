@@ -41,7 +41,7 @@ div.panel-body div {
 
 /* day/night styling */
 body.day div.panel-body div.panel-item:hover {
-  background-color: rgba(0, 0, 255, 0.1);
+  background-color: rgba(100, 100, 255, 0.25);
 }
 body.night div.panel-body div.panel-item:hover {
   background-color: rgba(255, 0, 0, 0.1);
