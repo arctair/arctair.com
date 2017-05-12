@@ -9,6 +9,35 @@ body {
   background-size: cover;
 }
 
+/* main window positioning and style */
+/* daytime-dependent backgrounds */
+/* media queries for mobile/small screens */
+@media screen and (max-width: 35em) {
+  div.main {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 0;
+  }
+  body.day {
+    background-image: url('../img/day-lowres.png');
+  }
+  body.night {
+    background-image: url('../img/evening-lowres.png');
+  }
+}
+@media screen and (min-width: 35em) {
+  div.main {
+    border-radius: 8px;
+  }
+  body.day {
+    background-image: url('../img/day.png');
+  }
+  body.night {
+    background-image: url('../img/evening.png');
+  }
+}
+
+
 div.center-wrap {
   display: flex;
   flex-direction: column;
@@ -18,10 +47,7 @@ div.center-wrap {
 div.center-content {
   margin: 0 auto;
 }
-/* main window positioning and style*/
-div.main {
-  border-radius: 8px;
-}
+
 
 /* window header */
 div.main h1 {

@@ -7,13 +7,11 @@ $(document).ready(function() {
 });
 
 function setDay() {
-    $(document.body).css('background-image', 'url(\'img/day.png\')');
     $(document.body).removeClass('night');
     $(document.body).addClass('day');
 }
 
 function setNight() {
-    $(document.body).css('background-image', 'url(\'img/evening.png\')');
     $(document.body).removeClass('day');
     $(document.body).addClass('night');
 }
