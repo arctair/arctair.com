@@ -1,6 +1,6 @@
 /* background configuration */
 html,body {
-	height: 100%;
+  height: 100%;
 }
 body {
   background-repeat: no-repeat;
@@ -10,13 +10,13 @@ body {
 }
 
 div.center-wrap {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
 }
 div.center-content {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 /* main window positioning and style*/
 div.main {
