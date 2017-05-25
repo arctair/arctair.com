@@ -82,6 +82,14 @@ body.night div.main div.panel div.panel-heading {
   color: #DBB;
 }
 
+/* coming-soon panels */
+body.day div.panel-item.coming-soon {
+  color: #AAA;
+}
+body.night div.panel-item.coming-soon {
+  color: #A88;
+}
+
 /* allow panel-items to behave as anchors */
 div.panel-item {
   position: relative;
