@@ -83,8 +83,11 @@ body.night div.main div.panel div.panel-heading {
 }
 
 /* coming-soon panels */
+div.panel-item.coming-soon small::before {
+  content: "coming soon: "
+}
 body.day div.panel-item.coming-soon {
-  color: #AAA;
+  color: #999;
 }
 body.night div.panel-item.coming-soon {
   color: #A88;
