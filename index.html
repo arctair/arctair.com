@@ -1,114 +1,156 @@
 <!DOCTYPE html >
 <html>
-  <head>
-    <script src='js/jquery-3.2.1.min.js'></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src='js/bg.js'></script>
-  </head>
-  <body>
-    <div class="toggleMode pull-right">
-      <button class="btn" onclick="toggleMode()">
-        <span class="glyphicon glyphicon glyphicon-adjust"></span>
-      </button>
+<head>
+  <!-- <script src='js/jquery-3.2.1.min.js'></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+  <script src="https://use.fontawesome.com/6318d27daf.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="quotebanner">
+    <div id="quote">
+      <p>
+        <q>Awareness is becoming acquainted with the environments, no matter where one happens to be.</q>
+        <small>-&nbsp;Sigurd&nbsp;F.&nbsp;Olson</small>
+      </p>
     </div>
-  <div class="center-wrap">
-    <div class="center-content main container-fluid">
-      <h1>arctair <small>official projects and contact</small></h1>
-      <div class="panel panel-default">
-        <div class="panel-heading">Live projects</div>
-        <div class="panel-body">
-          <div class="panel-item">
-            <p>
-              <b>Storyteller</b>
-              <br>
-              <small>a web app for teams building user stories</small>
-            </p>
-            <a href="http://github.com/NDSU-CS445-MR/Storyteller"><span></span></a>
-          </div>
-          <div class="panel-item">
-            <p>
-              <b>Geoduck</b>
-              <br>
-              <small>a discord bot for region-locking matchmaking channels</small>
-            </p>
-            <a href="http://github.com/arctair/geoduck"><span></span></a>
-          </div>
-          <div class="panel-item coming-soon">
-            <p>
-              <b>Geostructure VR</b>
-              <br>
-              <small>a virtual reality experience for geology students</small>
-            </p>
-            <a href="http://github.com/arctair/GeoStructure-VR"><span></span></a>
-          </div>
-          <div class="panel-item coming-soon">
-            <p>
-              <b>Hammocky</b>
-              <br>
-              <small>a mobile app for hammock adventurists</small>
-            </p>
-            <a href="http://github.com/arctair/hammocky"><span></span></a>
-          </div>
-          <div class="panel-item coming-soon">
-            <p>
-              <b>Cubely</b>
-              <br>
-              <small>interact with new cube friends</small>
-            </p>
-            <a href="http://github.com/arctair/cubely"><span></span></a>
-          </div>
-        </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row quoteborder">
+      <div class="col col-5">
+        <div class="text">Tyler Johnson</div>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">Contact</div>
-        <div class="panel-body">
-          <div class="panel-item">
-            <p>
-              <b>email</b>
-              <br>
-              <small>tyler&#64;arctair.com</small>
-              <br>
-              <small>pgp encryption welcome</small>
-            </p>
-            <a href="mailto:tyler@arctair.com"><span></span></a>
-          </div>
-          <div class="panel-item">
-            <p>
-              <b>linkedin</b>
-              <br>
-              <small>jtyler-arctair</small>
-            </p>
-            <a href="https://www.linkedin.com/in/jtyler-arctair/"><span></span></a>
-          </div>
-          <!-- <div class="panel-item"> -->
-            <!-- <p> -->
-              <!-- <b>steam</b> -->
-              <!-- <br> -->
-              <!-- <small>arctair</small> -->
-            <!-- </p> -->
-            <!-- <a href="https://steamcommunity.com/id/arctair"><span></span></a> -->
-          <!-- </div> -->
-          <div class="panel-item">
-            <p>
-              <b>reddit</b>
-              <br>
-              <small>arctair</small>
-            </p>
-            <a href="https://www.reddit.com/user/arctair"><span></span></a>
-          </div>
-          <div class="panel-item">
-            <p>
-              <b>stackexchange</b>
-              <br>
-              <small>arctair</small>
-            </p>
-            <a href="https://stackexchange.com/users/8089275/arctair"><span></span></a>
-          </div>
-        </div>
+      <div class="col col-2">
+        <img src="https://avatars3.githubusercontent.com/u/16978749?v=4">
+      </div>
+      <div class="col col-5">
+        <div class="text">Fargo, ND</div>
       </div>
     </div>
-  </body>
+    <br>
+    <div class="row">
+      <div class="col col-lg-6 col-md-12 col-s-12">
+        <h2>About me</h2>
+        <p>
+          My passions is technology that helps people better understand and enjoy
+          the world around them. That means assembling and integrating with apps
+          considered geospatial, accessible, easy-to-use and cool. My education
+          comes from North Dakota State University where I focused on computer
+          science and GIS to graduate in 2017 with a BS in computer science.
+        </p>
+        <p>
+          I spend most of my time hammocking, programming, gaming,
+          enjoying music and good company, traveling, reflecting and studying.
+          My hopes are to share and unify things that interest me while tapping
+          into what interests and drives others.
+        </p>
+      </div>
+      <div class="col col-lg-6 col-md-12 col-sm-12">
+        <h3>Storyteller <small>- class project</small></h3>
+        <p>
+          Storyteller is a web application for teams that storyboard with
+          user stories. Sticky notes are taken to the browser so
+          teams in the same room or different offices can draft stories in
+          real-time. Storyteller offers analysis of user story content
+          to catch common errors like overly-technical language and duplicate
+          or conflicting information.
+        </p>
+        <p>
+          Storyteller was developed in four months in a team of five student
+          developers as part of the
+          <a href="http://csprojects.cs.ndsu.nodak.edu/capstone/PreviousProjects/about/">
+            capstone program
+          </a> at NDSU. Technologies used include AngularJS and Firebase.
+          <br>
+          <a href="http://yama.arctair.com:8081/#!/board">
+            <i class="fa fa-laptop"></i>
+            demo
+          </a>
+          <a href="http://github.com/arctair/storyteller">
+            <i class="fa fa-github"></i>
+            source
+          </a>
+        </p>
+      </div>
+      <div class="col col-lg-6 col-md-12 col-sm-12">
+        <h3>Minnesota Fall Map <small>- personal project</small></h3>
+        <p>
+          The Minnesota fall map is a functional example of what can be
+          accomplished using existing APIs and data, GIS concepts and
+          software, cloud computing, and zero operating costs. This map
+          is hosted in Amazon S3 while updated hourly from up-to-date
+          foliage color data from the Minnesota Department of Natural
+          Resources. Updates are performed by a NodeJS function in Amazon
+          Lambda with the help of TurfJS and a theissen polygon generator.
+          Updated geospatial data is pushed to S3 to be retrieved by a
+          static front-end page and drawn with LeafletJS.
+          <br>
+          <a href="http://fall.arctair.com">
+            <i class="fa fa-laptop"></i>
+            demo
+          </a>
+          <a href="http://github.com/arctair/mn-fallmap">
+            <i class="fa fa-github"></i>
+            source
+          </a>
+        </p>
+      </div>
+      <div class="col col-lg-6 col-md-12 col-sm-12">
+        <h3>Clifton Labs<br><small>work experience (2017)</small></h3>
+        <p>
+          <ul>
+            <li>Database design, config, migrations and maintenance</li>
+            <li>Geospatial rendering and querying</li>
+            <li>ReST API design and implementation in Java</li>
+            <li>
+              Webapp development using React-Redux, LeafletJS, and common
+              front-end libraries
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div class="col col-lg-6 col-md-12 col-sm-12">
+        <h3>HERE Technologies<br><small>work experience (2017)</small></h3>
+        <p>
+          <ul>
+            <li>ArcGIS Desktop for quality analysis</li>
+            <li>Plan, train, and perform quality analysis processes</li>
+            <li>Python and ArcPy scripting for automation and geospatial analysis</li>
+            <li>Git, Gerrit and Maven</li>
+            <li>Amazon S3</li>
+            <li>Java &amp; Scala</li>
+          </ul>
+        </p>
+      </div>
+      <div class="col col-lg-6 col-md-12 col-sm-12">
+        <h3>Discovery Benefits<br><small>work experience (2015-2017)</small></h3>
+        <p>
+          <ul>
+            <li>Development in .NET via WPF and MS SQL</li>
+            <li>Minor project management</li>
+            <li>Microsoft Exchange/Outlook</li>
+            <li>Active Directory</li>
+            <li>Powershell</li>
+            <li>Mitel</li>
+          </ul>
+        </p>
+      </div>
+      <div class="col col-12 contact">
+        <a class="fa fa-envelope" href="mailto:jtyler_@outlook.com"></a>
+        <a class="fa fa-linkedin" href="https://linkedin.com/in/jtyler-arctair"></a>
+        <a class="fa fa-github" href="https://github.com/arctair"></a>
+        <a class="fa fa-gitlab" href="http://git.arctair.com/arctair"></a>
+        <a class="fa fa-stack-exchange" href="https://stackexchange.com/users/8089275/arctair"></a>
+        <a class="fa fa-reddit" href="https://reddit.com/u/arctair"></a>
+        <!-- <a class="fa fa-twitter" href="https://twitter.com/arctair"></a> -->
+        <a class="fa fa-steam" href="https://steamcommunity.com/id/arctair"></a>
+        <a class="fa fa-spotify" href="https://open.spotify.com/user/tdog158"></a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
