@@ -1,156 +1,64 @@
-<!DOCTYPE html >
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <!-- <script src='js/jquery-3.2.1.min.js'></script> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
-  <script src="https://use.fontawesome.com/6318d27daf.js"></script>
-  <style>
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>arctair.com</title>
+  <meta name="description" content="arctair.com landing">
+  <meta name="author" content="arctair">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.2.43/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Ubuntu">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mdi-bootstrap.css">
 </head>
 <body>
-  <div class="quotebanner">
-    <div id="quote">
-      <p>
-        <q>Awareness is becoming acquainted with the environments, no matter where one happens to be.</q>
-        <small>-&nbsp;Sigurd&nbsp;F.&nbsp;Olson</small>
-      </p>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row quoteborder">
-      <div class="col col-5">
-        <div class="text">Tyler Johnson</div>
-      </div>
-      <div class="col col-2">
-        <img src="https://avatars3.githubusercontent.com/u/16978749?v=4">
-      </div>
-      <div class="col col-5">
-        <div class="text">Fargo, ND</div>
-      </div>
-    </div>
-    <br>
+  <div class="jumbotron container-fluid">
     <div class="row">
-      <div class="col col-lg-6 col-md-12 col-s-12">
-        <h2>About me</h2>
-        <p>
-          My passion is technology that helps people better understand and enjoy
-          the world around them. That means assembling and integrating with apps
-          considered geospatial, accessible, easy-to-use and cool. My education
-          comes from North Dakota State University where I focused on computer
-          science and GIS to graduate in 2017 with a BS in computer science.
-        </p>
-        <p>
-          I spend most of my time hammocking, programming, gaming,
-          enjoying music and good company, traveling, reflecting and studying.
-          My hopes are to share and unify things that interest me while tapping
-          into what interests and drives others.
-        </p>
-      </div>
-      <div class="col col-lg-6 col-md-12 col-sm-12">
-        <h3>Storyteller <small>- class project</small></h3>
-        <p>
-          Storyteller is a web application for teams that storyboard with
-          user stories. Sticky notes are taken to the browser so
-          teams in the same room or different offices can draft stories in
-          real-time. Storyteller offers analysis of user story content
-          to catch common errors like overly-technical language and duplicate
-          or conflicting information.
-        </p>
-        <p>
-          Storyteller was developed in four months in a team of five student
-          developers as part of the
-          <a href="http://csprojects.cs.ndsu.nodak.edu/capstone/PreviousProjects/about/">
-            capstone program
-          </a> at NDSU. Technologies used include AngularJS and Firebase.
-          <br>
-          <a href="http://yama.arctair.com:8081/#!/board">
-            <i class="fa fa-laptop"></i>
-            demo
-          </a>
-          <a href="http://github.com/arctair/storyteller">
-            <i class="fa fa-github"></i>
-            source
-          </a>
-        </p>
-      </div>
-      <div class="col col-lg-6 col-md-12 col-sm-12">
-        <h3>Minnesota Fall Map <small>- personal project</small></h3>
-        <p>
-          The Minnesota fall map is a functional example of what can be
-          accomplished using existing APIs and data, GIS concepts and
-          software, cloud computing, and zero operating costs. This map
-          is hosted in Amazon S3 while updated hourly from up-to-date
-          foliage color data from the Minnesota Department of Natural
-          Resources. Updates are performed by a NodeJS function in Amazon
-          Lambda with the help of TurfJS and a theissen polygon generator.
-          Updated geospatial data is pushed to S3 to be retrieved by a
-          static front-end page and drawn with LeafletJS.
-          <br>
-          <a href="http://fall.arctair.com">
-            <i class="fa fa-laptop"></i>
-            demo
-          </a>
-          <a href="http://github.com/arctair/mn-fallmap">
-            <i class="fa fa-github"></i>
-            source
-          </a>
-        </p>
-      </div>
-      <div class="col col-lg-6 col-md-12 col-sm-12">
-        <h3>Clifton Labs<br><small>work experience (2017)</small></h3>
-        <p>
-          <ul>
-            <li>Database design, config, migrations and maintenance</li>
-            <li>Geospatial rendering and querying</li>
-            <li>ReST API design and implementation in Java</li>
-            <li>
-              Webapp development using React-Redux, LeafletJS, and common
-              front-end libraries
-            </li>
-          </ul>
-        </p>
-      </div>
-      <div class="col col-lg-6 col-md-12 col-sm-12">
-        <h3>HERE Technologies<br><small>work experience (2017)</small></h3>
-        <p>
-          <ul>
-            <li>ArcGIS Desktop for quality analysis</li>
-            <li>Plan, train, and perform quality analysis processes</li>
-            <li>Python and ArcPy scripting for automation and geospatial analysis</li>
-            <li>Git, Gerrit and Maven</li>
-            <li>Amazon S3</li>
-            <li>Java &amp; Scala</li>
-          </ul>
-        </p>
-      </div>
-      <div class="col col-lg-6 col-md-12 col-sm-12">
-        <h3>Discovery Benefits<br><small>work experience (2015-2017)</small></h3>
-        <p>
-          <ul>
-            <li>Development in .NET via WPF and MS SQL</li>
-            <li>Minor project management</li>
-            <li>Microsoft Exchange/Outlook</li>
-            <li>Active Directory</li>
-            <li>Powershell</li>
-            <li>Mitel</li>
-          </ul>
-        </p>
-      </div>
-      <div class="col col-12 contact">
-        <a class="fa fa-envelope" href="mailto:jtyler_@outlook.com"></a>
-        <a class="fa fa-linkedin" href="https://linkedin.com/in/jtyler-arctair"></a>
-        <a class="fa fa-github" href="https://github.com/arctair"></a>
-        <a class="fa fa-gitlab" href="http://git.arctair.com/arctair"></a>
-        <a class="fa fa-stack-exchange" href="https://stackexchange.com/users/8089275/arctair"></a>
-        <a class="fa fa-reddit" href="https://reddit.com/u/arctair"></a>
-        <!-- <a class="fa fa-twitter" href="https://twitter.com/arctair"></a> -->
-        <a class="fa fa-steam" href="https://steamcommunity.com/id/arctair"></a>
-        <a class="fa fa-spotify" href="https://open.spotify.com/user/tdog158"></a>
+      <div class="col col-xl-3 col-lg-4 col-md-6 col-sm-12"></div>
+      <div class="col col-xl-9 col-lg-8 col-md-6 col-sm-0 text-center quote">
+        "Awareness is becoming acquainted with the environments, no matter where one happens to be." -&nbsp;Sigurd F. Olson
       </div>
     </div>
   </div>
+  <div class="container-fluid container-sidebar">
+    <div class="row">
+      <div class="col col-xl-3 col-lg-4 col-md-6 col-sm-12 sidebar" style="position: relative;">
+        <div class="navbar-header text-center">
+          <img src="https://avatars3.githubusercontent.com/u/16978749?v=4"></img>
+          <div class="avatar-name">Tyler Johnson</div>
+          <div class="navbar-divide"></div>
+          <p>
+            I'm a web technologies and GIS developer. My time gets divied up
+            between that, growing into Fargo as an NDSU graduate, and
+            adventuring around the area.
+          </p>
+          <p>
+            I love to hear what's on your mind so please put the buttons below
+            to use by contacting me!
+          </p>
+          <div class="navbar-divide"></div>
+          <a class="mdi mdi-email mdi-36px" href="mailto:jtyler_@outlook.com"></a>
+          <a class="mdi mdi-linkedin-box mdi-36px" href="https://linkedin.com/in/jtyler-arctair"></a>
+          <a class="mdi mdi-github-box mdi-36px" href="https://github.com/arctair"></a>
+          <a class="mdi mdi-spotify mdi-36px" href="https://open.spotify.com/user/tdog158"></a>
+        </div>
+        <div>
+          <ul>
+            <a href="http://hammocky.com"><li class="hammocky-nav">hammocky.com</li></a>
+            <a href="http://fall.arctair.com"><li class="fall-nav">fall.arctair.com</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
 </html>

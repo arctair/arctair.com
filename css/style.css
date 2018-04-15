@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+  font-family: 'Ubuntu';
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.jumbotron {
+  background-image: url('../media/day-medres.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  min-height: 100%;
+  margin: 0;
+  position: fixed;
+}
+
+.quote {
+  font-family: 'Courgette', cursive;
+  font-size: 2rem;
+  color: #FF8;
+}
+
+.container-sidebar {
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.container-sidebar > .row {
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.sidebar {
+  min-height: 100vh;
+  min-height: 100%;
+  background-color: #7bb0c2;
+}
+
+.navbar-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.avatar-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navbar-header > img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 2px solid #222222;
+  margin-bottom: 1rem;
+}
+
+.navbar-divide {
+  width: 12rem;
+  border: 0.5px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.sidebar li {
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+  font-weight: bold;
+}
+
+.sidebar li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hammocky-nav {
+  background-image: url('../media/hammocky.jpg');
+}
+
+.fall-nav {
+  background-image: url('../media/fallcolors.jpg');
+}
