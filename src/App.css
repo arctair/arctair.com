@@ -1,28 +1,106 @@
 .App {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/superior.png');
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.sidebar {
+  background-color: lightblue;
+  padding: 2em 1em 2em 1em;
+  border-bottom: 1em solid maroon;
+}
+
+.sidebar h1 {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.sidebar p {
+  text-indent: 0.5em;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact a {
+  flex: 0;
+  font-size: 2em;
+  margin: 0.25em;
+  text-decoration: none;
+  color: #444;
+  transition: color 250ms ease;
+}
+
+.contact a:hover {
+  color: maroon;
+}
+
+.links a {
+  display: block;
+  padding: 1em;
+  margin: 0.25em;
+  transition: background-color 500ms ease;
   color: white;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 900;
 }
 
-.App-title {
-  font-size: 1.5em;
+.links a:hover {
+  background-color: rgba(255, 255, 0, 0.5);
 }
 
-.App-intro {
-  font-size: large;
+.nav-bg {
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.nav-bg.hammocky {
+  background-image: url('./img/hammocky.jpg');
 }
+
+.nav-bg.cruftbusters {
+  background-image: url('./img/atlas.jpg');
+}
+
+.nav-bg.fallmap {
+  background-image: url('./img/fallcolors.jpg');
+}
+
+.quote {
+  position: relative;
+  height: 100vh;
+}
+
+.quote .content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-family: 'Yellowtail', cursive;
+}
+
+@media (min-width: 992px) {
+  .quote .content {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900|Yellowtail');
