@@ -81,6 +81,13 @@ body {
   background-image: url('./img/fallcolors.jpg');
 }
 
+.nav-bg.storyteller {
+  background-image: url('./img/storyteller.jpg');
+  /* for coming-soon effect */
+  filter: grayscale(100%);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
 .quote {
   position: relative;
   height: 100vh;

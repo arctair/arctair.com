@@ -35,6 +35,7 @@ class App extends Component {
                 <a className='nav-bg hammocky' href='http://hammocky.com'>Hammocky</a>
                 <a className='nav-bg cruftbusters' href='http://cruftbusters.arctair.com'>Cruftbusters Consulting</a>
                 <a className='nav-bg fallmap' href='http://fall.arctair.com'>Minnesota Fall Map</a>
+                <a className='nav-bg storyteller' href='#'>Storyteller (coming soon)</a>
               </div>
             </div>
           </div>
