@@ -45,6 +45,7 @@ class App extends Component {
                   <li>The Ender Quintet</li>
                   <li>Astrophysics for People in a Hurry</li>
                   <li>The Singing Wilderness</li>
+                  <li>Clean Code</li>
                 </ul>
               </div>
               <h2>Now Playing</h2>
