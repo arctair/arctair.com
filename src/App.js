@@ -21,7 +21,7 @@ class App extends Component {
               <div className='contact'>
                 <a href='https://github.com/arctair'><FaGithub /></a>
                 <a href='https://linkedin.com/in/jtyler-arctair'><FaLinkedin /></a>
-                <a href='mailto:jtyler_@outlook.com'><FaEnvelope /></a>
+                <a href='mailto:tyler@arctair.com'><FaEnvelope /></a>
                 <a href='https://open.spotify.com/user/tdog158'><FaSpotify /></a>
               </div>
               <h2>Hyperlinks</h2>
