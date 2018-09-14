@@ -27,7 +27,7 @@ class App extends Component {
               <h2>Hyperlinks</h2>
               <div className='links'>
                 <a className='nav-bg hammocky' href='http://hammocky.com'>Hammocky</a>
-                <a className='nav-bg cruftbusters' href='http://cruftbusters.arctair.com'>Cruftbusters Consulting</a>
+                <a className='nav-bg cruftbusters' href='https://cruftbusters.com'>Cruftbusters Consulting</a>
                 <a className='nav-bg fallmap' href='http://fall.arctair.com'>Minnesota Fall Map</a>
                 <a className='nav-bg storyteller' href='#'>Storyteller (coming soon)</a>
               </div>
