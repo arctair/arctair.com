@@ -58,6 +58,7 @@ class App extends Component {
                   frameborder="0"
                   allowtransparency="true"
                   allow="encrypted-media"
+                  title='now-playing-dream-pop'
                 />
               </div>
             </div>
