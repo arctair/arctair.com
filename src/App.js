@@ -20,10 +20,10 @@ class App extends Component {
               </h1>
               <h2>Contact</h2>
               <div className='contact'>
-                <a href='https://github.com/arctair'><FaGithub /></a>
-                <a href='https://linkedin.com/in/jtyler-arctair'><FaLinkedin /></a>
-                <a href='mailto:tyler@arctair.com'><FaEnvelope /></a>
-                <a href='https://open.spotify.com/user/tdog158'><FaSpotify /></a>
+                <a href='https://github.com/arctair' alt='github'><FaGithub /></a>
+                <a href='https://linkedin.com/in/jtyler-arctair' alt='linkedin'><FaLinkedin /></a>
+                <a href='mailto:tyler@arctair.com' alt='email'><FaEnvelope /></a>
+                <a href='https://open.spotify.com/user/tdog158' alt='spotify'><FaSpotify /></a>
               </div>
               <h2>Hyperlinks</h2>
               <div className='links'>
