@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { FaGithub, FaLinkedin, FaEnvelope, FaSpotify } from 'react-icons/fa'
 import './App.css'
+import './Background.css'
 
 class App extends Component {
   render() {
