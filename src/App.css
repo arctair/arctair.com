@@ -92,10 +92,6 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-.nav-bg.hammocky {
-  background-image: url('./img/hammocky.jpg');
-}
-
 .nav-bg.cruftbusters {
   background-image: url('./img/atlas.jpg');
 }
@@ -104,11 +100,9 @@ body {
   background-image: url('./img/fallcolors.jpg');
 }
 
-.nav-bg.storyteller {
-  background-image: url('./img/storyteller.jpg');
-  /* for coming-soon effect */
-  filter: grayscale(100%);
-  background-color: rgba(0, 0, 0, 0.35);
+.nav-bg.snare {
+  background-image: linear-gradient(to right bottom, rgb(24, 68, 167), rgb(90, 48, 143));
+  color: rgb(207, 197, 175);
 }
 
 .bookshelf ul {

@@ -39,26 +39,22 @@ class App extends Component {
               </div>
               <h2>Hyperlinks</h2>
               <div className='links'>
-                <a className='nav-bg hammocky' href='http://hammocky.com'>Hammocky</a>
                 <a className='nav-bg cruftbusters' href='https://cruftbusters.com'>Cruftbusters Consulting</a>
+                <a className='nav-bg snare' href='https://snare.cc'>Snare Podcasts</a>
                 <a className='nav-bg fallmap' href='http://fall.arctair.com'>Minnesota Fall Map</a>
-                <a className='nav-bg storyteller' href='/'>Storyteller (coming soon)</a>
               </div>
               <h2>Bio</h2>
               <p>
-                My name is Tyler. I'm a web technology and GIS engineer. I love
-                spending my time at the common edge between the outdoors and
-                technology. You'll often find me tweaking my interstate homelab,
-                studying software packages and paradigms, biking, hiking, playing
-                Duck Game, reading, building a playlist, or cooking.
+                I write code and look at maps. Fargo raised, Minnesota spirit.
               </p>
               <h2>Bookshelf</h2>
               <div className='bookshelf'>
                 <ul>
                   <li>The Ender Quintet</li>
                   <li>Astrophysics for People in a Hurry</li>
-                  <li>The Singing Wilderness</li>
                   <li>Clean Code</li>
+                  <li>Alexander the Great and the Logisics of the Macedonian Army</li>
+                  <li>Joy, Inc.</li>
                 </ul>
               </div>
               <h2>Now Playing</h2>
